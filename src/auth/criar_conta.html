@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Criar nova conta </title>
+</head>
+
+<body class="bg-login">
+
+    <!-- div geral -->
+    <div class="mt-6 w-full overflow-hidden bg-white px-8 py-4 shadow-md sm:max-w-md sm:rounded-lg">
+
+        <!-- div da imagem -->
+        <div class="flex justify-center mb-4">
+            <img src="/public/curso_ia_unimontes-500x500.png" alt="logo" class="h-20 w-20">
+        </div>
+
+        <h1 class="text-2xl font-bold text-center text-blue-500">Criar nova conta</h1>
+
+        <!-- div para o formulario -->
+        <div>
+            <form action="#" method="post" class="mt-4">
+                <label for="userName" class="block text-sm font-medium text-gray-700">User Name:</label>
+                <input type="text" name="userName" id="userName" placeholder="nome de usuario" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2">
+
+                <label for="email" class="block text-sm font-medium text-gray-700 mt-4" >E-email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2" >
+
+                <label for="senha" class="block text-sm font-medium text-gray-700 mt-4" >Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="digite sua senha" class="mt-1 block w-full rounded-md border-2 border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none px-3 py-2">
+
+                <div class="btn-group-login">
+                    <a href="/src/index.html" class="link-login">Login</a>
+
+                    <button type="submit" class="btn-primary-md">Cadastrar</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    
+    <title>login</title>
+
+</head >
+<body class="bg-login ">
+
+	<div class="card-login">
+      
+    	<div class="logo-wrapper-login">
+    		<a href="/">
+        	<img src="../public/curso_ia_unimontes-500x500.png" alt="logo" 
+        	class="logo-login ">
+        	</a>
+        </div>
+
+        <h1 class="title-login ">Área restrita</h1>
+
+        <form action="#" method="post" class="mt-4">
+        	<!-- campo email -->
+        	<div class="fotm-group-logi">
+            	<label for="email" class="form-label-login"> E-mail 
+            	</label>
+				<input type="email" name="email" id="email" placeholder="Digite seu email" class="form-input-login">
+       		</div>
+
+         	<!-- campo senha -->
+        	<div class="fotm-group-logi">
+				<label for="senha" class="form-label-login">Senha</label>
+				<input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="form-input-login">
+          	</div>
+
+			<!-- link para recuperar senha e botão de login -->
+			<div class="btn-group-login">
+				<a href="#" class="link-login">Esqueceu a senha?</a>
+				<!-- <button type="submit" class="btn-primary">Acessar</button> -->
+				<a href="./adm/dashboard.html" class="btn-primary-md">Acessar</a>
+			</div>
+
+			<!-- novo usuario  -->
+			 <div class="mt-4 text-center">
+				<a href="#" class="link-login">Criar nova conta !</a>
+			 </div>
+
+			<!-- informações de login -->
+			 <div class="mt-4 text-center text-sm text-gray-600">
+				<p>Usuário: cesar@celk.com.br</p>
+				<p>Senha: 123456A#s</p>
+			 </div>
+
+        </form>
+
+    </div>
 </body>
 </html>

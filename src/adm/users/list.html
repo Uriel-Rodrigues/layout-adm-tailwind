@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../output.css">
+    <title>Document</title>
+</head>
+<body class="bg-dashboard">
+    <!-- Navbar -->
+     <nav class="navbar">
+        <div class="navbar-container">
+            <button id="toggleSidebar" class="menu-button">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div class="user-container">
+                <div class="relative">
+                    <!-- Dropdown -->
+                    <button id="userDropdowButton" class="dropdown-button">
+                        Usuario
+                        <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                     <!-- conteudo do dropdown -->
+                    <div id="dropdownContent" class="dropdown-content hidden">
+                        <a href="#" class="dropdown-item ">Perfil</a>
+                        <a href="#" class="dropdown-item ">Sair</a>
+
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- sidBar -->
+         <aside id="sidebar" class="sidebar">
+            <div class="sidebar-container">
+                <button id="closeSidebar" class="sidebar-close-button">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="sidebar-header">
+                    <span class="sidebar-title"> Uriel</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
+                    <a href="./list.html" class="sidebar-link">Usuarios</a>
+                    <a href="../../index.html" class="sidebar-link">Sair</a>
+
+                </nav>
+            </div>
+         </aside>
+
+        <!-- conteudo principal -->
+        <main class="main-content">
+            <!-- titulo a trilha de navegação -->
+            <div class="content-wrapper">
+                <div class="content-header">
+                    <h2 class="content-title">Usuarios</h2>
+                    <nav class="breadcrumb">
+                        <a href="../dashboard.html" class=" breadcrumb-link">Dashboard</a>
+                        <span>/</span>
+                        <span>Usuarios</span>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-box-header">
+                    <h3 class="content-box-title">Listar Usuários</h3>
+                    <div class="content-box-btn">
+                        <a href="./create.html" class="btn-success">Cadastrar</a>
+                    </div>
+                </div>
+
+                <!-- Criação da tabela com Usuarios -->
+                <div class="table-container">
+                    <table class="table">
+                        <thead> 
+                            <tr class="table-row-header">
+                                <th class="table-header">ID</th>
+                                <th class="table-header">Nome</th>
+                                <th class="table-header">E-mail</th>
+                                <th class="table-header center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row-body">
+                                <td class="table-body">1</td>
+                                <td class="table-body">Uriel</td>
+                                <td class="table-body">Uriel@email.com.br</td>
+                                <td class="table-body table-actions">
+                                    <a href="./view.html" class="btn-primary">Visualizar</a> 
+                                    <a href="./edit.html" class="btn-warning">Editar</a> 
+                                    <a href="#" class="btn-danger">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr class="table-row-body">
+                                <td class="table-body">1</td>
+                                <td class="table-body">Amanda</td>
+                                <td class="table-body">Amanda@email.com.br</td>
+                                <td class="table-body table-actions">
+                                    <a href="./view.html" class="btn-primary">Visualizar</a> 
+                                    <a href="./edit.html" class="btn-warning">Editar</a> 
+                                    <a href="#" class="btn-danger">Apagar</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    
+
+    <!-- scripti para abrir e fechar o dropdown -->
+    <script>
+        const dropdownButton = document.getElementById('userDropdowButton')
+        const dropdownContent = document.getElementById('dropdownContent')
+
+        dropdownButton.addEventListener('click', function(){
+            const isOpen = dropdownContent.classList.contains("hidden")
+            if(isOpen){
+                dropdownContent.classList.remove('hidden')
+            }else{
+                dropdownContent.classList.add('hidden')
+            }
+        })
+
+        // fechar o dropdown se clicar fora dele
+        window.addEventListener('click', function(event){
+            if(!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)){
+                dropdownContent.classList.add('hidden')
+            }
+        })
+    </script>
+
+    <!-- apresentar oculpar sidebar -->
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function(){
+            document.getElementById('sidebar').classList.toggle('-translate-x-full')
+        })
+        document.getElementById('closeSidebar').addEventListener('click', function(){
+            document.getElementById('sidebar').classList.add('-translate-x-full')
+        })
+
+    </script>
+    
+</body>
+</html>
