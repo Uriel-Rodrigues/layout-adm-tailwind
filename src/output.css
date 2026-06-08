@@ -373,6 +373,16 @@
       border-radius: var(--radius-lg);
     }
   }
+  .md\:inline-block {
+    @media (width >= 48rem) {
+      display: inline-block;
+    }
+  }
+  .lg\:table-cell {
+    @media (width >= 64rem) {
+      display: table-cell;
+    }
+  }
 }
 @layer components {
   .bg-login {

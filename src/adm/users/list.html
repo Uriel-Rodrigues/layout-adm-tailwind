@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <base href="/src/">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../output.css">
+    <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
 </head>
 <body class="bg-dashboard">
@@ -53,9 +55,9 @@
                     <span class="sidebar-title"> Uriel</span>
                 </div>
                 <nav class="sidebar-nav">
-                    <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
-                    <a href="./list.html" class="sidebar-link">Usuarios</a>
-                    <a href="../../index.html" class="sidebar-link">Sair</a>
+                    <a href="/src/adm/dashboard.html" class="sidebar-link">Dashboard</a>
+                    <a href="/src/adm/users/list.html" class="sidebar-link">Usuarios</a>
+                    <a href="/src/index.html" class="sidebar-link">Sair</a>
 
                 </nav>
             </div>
@@ -68,7 +70,7 @@
                 <div class="content-header">
                     <h2 class="content-title">Usuarios</h2>
                     <nav class="breadcrumb">
-                        <a href="../dashboard.html" class=" breadcrumb-link">Dashboard</a>
+                        <a href="/src/adm/dashboard.html" class=" breadcrumb-link">Dashboard</a>
                         <span>/</span>
                         <span>Usuarios</span>
                     </nav>
@@ -79,7 +81,7 @@
                 <div class="content-box-header">
                     <h3 class="content-box-title">Listar Usuários</h3>
                     <div class="content-box-btn">
-                        <a href="./create.html" class="btn-success">Cadastrar</a>
+                        <a href="/src/adm/users/create.html" class="btn-success">Cadastrar</a>
                     </div>
                 </div>
 
@@ -90,7 +92,7 @@
                             <tr class="table-row-header">
                                 <th class="table-header">ID</th>
                                 <th class="table-header">Nome</th>
-                                <th class="table-header">E-mail</th>
+                                <th class="table-header hidden lg:table-cell">E-mail</th>
                                 <th class="table-header center">Ações</th>
                             </tr>
                         </thead>
@@ -98,21 +100,21 @@
                             <tr class="table-row-body">
                                 <td class="table-body">1</td>
                                 <td class="table-body">Uriel</td>
-                                <td class="table-body">Uriel@email.com.br</td>
+                                <td class="table-body hidden lg:table-cell">Uriel@email.com.br</td>
                                 <td class="table-body table-actions">
-                                    <a href="./view.html" class="btn-primary">Visualizar</a> 
-                                    <a href="./edit.html" class="btn-warning">Editar</a> 
-                                    <a href="#" class="btn-danger">Apagar</a>
+                                    <a href="/src/adm/users/view.html" class="btn-primary">Visualizar</a> 
+                                    <a href="/src/adm/users/edit.html" class="btn-warning hidden md:inline-block">Editar</a> 
+                                    <a href="#" class="btn-danger hidden md:inline-block">Apagar</a>
                                 </td>
                             </tr>
                             <tr class="table-row-body">
                                 <td class="table-body">1</td>
                                 <td class="table-body">Amanda</td>
-                                <td class="table-body">Amanda@email.com.br</td>
+                                <td class="table-body hidden lg:table-cell">Amanda@email.com.br</td>
                                 <td class="table-body table-actions">
-                                    <a href="./view.html" class="btn-primary">Visualizar</a> 
-                                    <a href="./edit.html" class="btn-warning">Editar</a> 
-                                    <a href="#" class="btn-danger">Apagar</a>
+                                    <a href="/src/adm/users/view.html" class="btn-primary">Visualizar</a> 
+                                    <a href="/src/adm/users/edit.html" class="btn-warning hidden md:inline-block">Editar</a> 
+                                    <a href="#" class="btn-danger hidden md:inline-block">Apagar</a>
                                 </td>
                             </tr>
 
