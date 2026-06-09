@@ -222,12 +222,26 @@
 
     /****** fim formulario ******/
 
+    /****** inicio detalhes registro ******/
+
+    /*caixa para apresentar os detalhes do registro*/
+    .detail-box{
+        @apply text-gray-700
+    }
+
+    /* detalhes registro */
+    .detail-content{
+        @apply font-bold
+    }
+
+    /****** fim detalhes registro ******/
+
     /****** inicio botões ******/
     
     /* Botão azul */
     .btn-primary {
         @apply bg-blue-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600
-        transition-colors cursor-pointer 
+        transition-colors cursor-pointer flex items-center space-x-1 
     }
     /* Botão azul medio */
     .btn-primary-md {
