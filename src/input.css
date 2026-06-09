@@ -209,6 +209,19 @@
 
     /****** fim tabela listar registros ******/
 
+    /****** inicio formulario ******/
+
+    /* label dos inputs*/
+    .form-label{
+        @apply block text-sm font-semibold
+    }
+    /* input padrão*/
+    .form-input{
+        @apply border p-2 w-full mt-1 rounded-md border-blue-100 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:outline-none 
+    }
+
+    /****** fim formulario ******/
+
     /****** inicio botões ******/
     
     /* Botão azul */
