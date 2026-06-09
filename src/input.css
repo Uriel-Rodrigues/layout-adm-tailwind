@@ -120,7 +120,11 @@
     }
 
     .sidebar-link {
-        @apply block px-4 py-2 text-sm text-gray-50 hover:bg-blue-900;
+        @apply px-4 py-2 text-sm text-gray-50 hover:bg-blue-900 flex items-center space-x-1;
+    }
+
+    .sidebar-link.active {
+        @apply bg-blue-900
     }
     /****** Fim Sidebar ******/
 
@@ -200,7 +204,7 @@
     }
 
     .table-actions{
-        @apply text-center space-x-0
+        @apply text-center space-x-1 flex justify-center items-center
     }
 
     /****** fim tabela listar registros ******/
@@ -209,36 +213,36 @@
     
     /* Botão azul */
     .btn-primary {
-        @apply bg-blue-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-600
+        @apply bg-blue-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600
         transition-colors cursor-pointer 
     }
     /* Botão azul medio */
     .btn-primary-md {
-        @apply bg-blue-500 text-white text-base px-3 py-2 rounded hover:bg-blue-600
+        @apply bg-blue-500 text-white text-base px-2 py-2 rounded hover:bg-blue-600
         transition-colors cursor-pointer 
     }
 
     /* Botão azul claro */
     .btn-info {
-        @apply bg-cyan-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-600
-        transition-colors cursor-pointer 
+        @apply bg-cyan-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600
+        transition-colors cursor-pointer flex items-center space-x-1 
     }
 
     /* Botão verde */
     .btn-success {
-        @apply bg-green-500 text-white text-sm px-3 py-1 rounded hover:bg-green-600
-        transition-colors cursor-pointer 
+        @apply bg-green-500 text-white text-sm px-2 py-1 rounded hover:bg-green-600
+        transition-colors cursor-pointer flex items-center space-x-1 
     }
 
     /* Botão amarelo */
     .btn-warning {
-        @apply bg-yellow-500 text-white text-sm px-3 py-1 rounded hover:bg-yellow-600
+        @apply bg-yellow-500 text-white text-sm px-2 py-1 rounded hover:bg-yellow-600
         transition-colors cursor-pointer 
     }
 
     /* Botão vermelho  */
     .btn-danger {
-        @apply bg-red-500 text-white text-sm px-3 py-1 rounded hover:bg-red-600
+        @apply bg-red-500 text-white text-sm px-2 py-1 rounded hover:bg-red-600
         transition-colors cursor-pointer 
     }
 
