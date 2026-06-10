@@ -241,7 +241,7 @@
     /* Botão azul */
     .btn-primary {
         @apply bg-blue-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600
-        transition-colors cursor-pointer flex items-center space-x-1 
+        transition-colors cursor-pointer  
     }
     /* Botão azul medio */
     .btn-primary-md {
@@ -252,13 +252,13 @@
     /* Botão azul claro */
     .btn-info {
         @apply bg-cyan-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600
-        transition-colors cursor-pointer flex items-center space-x-1 
+        transition-colors cursor-pointer 
     }
 
     /* Botão verde */
     .btn-success {
         @apply bg-green-500 text-white text-sm px-2 py-1 rounded hover:bg-green-600
-        transition-colors cursor-pointer flex items-center space-x-1 
+        transition-colors cursor-pointer 
     }
 
     /* Botão amarelo */
@@ -271,6 +271,11 @@
     .btn-danger {
         @apply bg-red-500 text-white text-sm px-2 py-1 rounded hover:bg-red-600
         transition-colors cursor-pointer 
+    }
+    
+    /* alinhar icone nos botoes */
+    .aling-icon-btn {
+        @apply flex items-center space-x-1    
     }
 
     /****** fim botões ******/
